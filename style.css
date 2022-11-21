@@ -11,8 +11,13 @@
   --hover: #036c81;
 }
 
+.page {
+  width: 100vw;
+  height: 100vh;
+}
+
 body {
-  background-color: var(--primary);
+  background-color: black;
   font-family: "Open Sans", Helvetica, sans-serif;
   font-size: 14rem;
   overflow: hidden;
@@ -48,22 +53,26 @@ main {
   justify-content: space-between;
   padding: 1rem 5rem 1rem;
   color: white;
-  background-image: url(./img/img-background.png);
-  width: 100%;
-  background-repeat: no-repeat;
   height: 100vh;
+  width: 100%;
+
+  background-image: url(./img/img-background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  
 }
 
 /* Texto bem vindo  */
 h1 {
-  font-size: 4rem;
+  font-size: 3.5rem;
   font-weight: normal;
   letter-spacing: 0.3rem;
   padding-top: 5rem;
 }
 
 h1 span {
-  font-size: 4.8rem;
+  font-size: 4.5rem;
   font-weight: bold;
   letter-spacing: 0.3rem;
 }
@@ -116,7 +125,7 @@ footer {
     font-size: 1.8rem;
     text-align: end;
     color: white;
-    background-color: var(--primary);
+    /* background-color: black; */
     padding: 1rem;
 }
 /* /rodapé */
