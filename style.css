@@ -49,6 +49,8 @@ main {
   padding: 1rem 5rem 1rem;
   color: white;
   background-image: url(./img/img-background.png);
+  width: 100%;
+  background-repeat: no-repeat;
   height: 100vh;
 }
 
