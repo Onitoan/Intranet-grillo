@@ -1,55 +1,91 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="style.css">
-    
-    <title>intranet</title>
-</head>
-<body>
-    <div class="page">
+     <link rel="stylesheet" href="./css/style.css" />
+     <script src="./js/script.js" type="module" defer></script>
 
-        <header>
+     <title>INTRANET GRILLO</title>
+  </head>
+  <body>
+      <div class="page">
+          <header>
             <div class="top">
-                <img class="logo" src="./img/logo.png" alt="Logo locadora Grillo">
+              <img class="logo" src="./img/logo.png" alt="Logo locadora Grillo" />
 
-                <div class="help">
-                    <img src="./img/help.svg" alt="circulo com interrogação">
-                    <p>Ajuda</p>
-                </div>
+              <div class="help">
+                <img src="./img/help.svg" alt="circulo com interrogação" />
+                 <p>Ajuda</p>
+              </div>
             </div>
-        </header>
 
-        <main>
-            <div class="info">                
-                <h1>Bem-vindo ao portal
-                    <br>
-                     <span>GRILLO E RIBEIRO</span> 
+<!-- habilitar depois do login -->
+            <ul class="sub-menu open">
+              <li>HOME</li>
+              <li>OPERAÇÕES</li>
+              <li>COMERCIAL</li>
+              <li>CONTATOS INTERNOS</li>
+              <li>R.H</li>
+              <li>ABERTURA DE TICKET</li>
+              <li>NOTÍCIAS</li>
+              <li>FERRAMENTAS</li>
+            </ul>
+          </header>
+
+          <main>
+<!-- Tela de login -->
+            <div class="Beginning">
+             <div class="info">
+                <h1>
+                  Bem-vindo a intranet
+                  <br />
+                  <span>GRILLO E RIBEIRO</span>
                 </h1>
-            </div>
-            
-            <div class="entry">
-
+              </div>
+<!-- login e senha -->
+              <div class="entry">
                 <div class="login">
-                    <input placeholder="USÚARIO" class="ipt-login" type="text">
+                  <input placeholder="USUARIO" class="ipt-login" type="text" />
                 </div>
                 <div class="password">
-                    <input placeholder="SENHA" class="ipt-password" type="password">
+                  <input placeholder="SENHA" class="ipt-password" type="password" />
                 </div>
-                <button class="bt-acess">
-                    ENTRAR NO PORTAL
-                </button>
-
+                <button class="bt-acess">ENTRAR NO PORTAL</button>
+              </div>
             </div>
+    
+<!-- noticias -->
+            <div class="notice open">
+              <!-- botões laterais -->
+              <div class="side">
+                <button class="bt-project">Projetos</button>
+                <button class="bt-iso">Conheça a ISO 9001</button>
+                <button class="bt-audit">Auditoria 2022</button>
+              </div>
 
-        </main>
-
-        <footer>
-            <p>© 2022 Locadora Grillo e Ribeiro. | Todos os direitos reservados.</p>
-        </footer>
-    </div>
-</body>
+              <!-- video -->
+              <video autoplay class="video" controls poster="demo.jpg">
+                <source src="./img/notice.mp4" type="video/mp4" />
+                <object>
+                  <embed
+                  src="demo.mp4"
+                  type="application/x-shockwave-flash"
+                  allowfullscreen="false"
+                  allowscriptaccess="always"
+                  />
+                </object>
+                  Formato não suportado
+              </video>
+              
+              
+            </div>
+          </main>
+      </div>
+      <footer>
+        <p>© 2022 Locadora Grillo e Ribeiro. | Todos os direitos reservados.</p>
+      </footer>
+  </body>
 </html>
