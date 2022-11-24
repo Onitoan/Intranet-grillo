@@ -22,35 +22,25 @@
   box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.5);
 }
 
-Li {
-  font-size: 1.2rem;
-  font-weight: bold;
-  color: white;
-  cursor: pointer;
-  padding: 1rem 1.5rem;
-  transition: 0.5s;
-}
-
-li:hover {
-  background: var(--hover);
-  transform: scale(1.1);
-}
-
-
-
-
 .notice.open { /*noticias*/
   display: flex;
   justify-content: center;
   gap: 10rem;
   padding: 2.5rem 2rem 0 4rem;
 }
-.video {
-  height: 70vh;
-  border-radius: 10px;
-  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.5);
+
+.help.open {
+  display: none;
 }
 
-.side { /*botões laterais*/
-display: grid;
+.logout.open {
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  gap: 1rem;
+  font-weight: bold;
+  color: var(--primary);
+  cursor: pointer;
+  transition: .5s;
 }
+

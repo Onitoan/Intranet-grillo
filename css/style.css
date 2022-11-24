@@ -14,6 +14,19 @@
   --hover: #036c81;
 }
 
+body {
+  background: linear-gradient(
+    -45deg,
+    var(--primary),
+    #000000,
+    #003244,
+    var(--hover)
+  );
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  height: 100vh;
+}
+
 .page {
   width: 100vw;
   height: 100vh;
@@ -48,8 +61,8 @@ body {
   gap: 1rem;
   font-weight: bold;
   color: var(--primary);
+  cursor: pointer;
 }
-/* /barra inicial  */
 
 /* Texto bem vindo  */
 h1 {
@@ -64,7 +77,6 @@ h1 span {
   font-weight: bold;
   letter-spacing: 0.3rem;
 }
-/* /texto bem vindo */
 
 /* LOGIN */
 .entry {
@@ -99,6 +111,7 @@ input {
   transition: background-color 0.5s;
 }
 
+/* todos os botões */
 .bt-project:hover,
 .bt-iso:hover,
 .bt-audit:hover,
@@ -111,21 +124,13 @@ input {
 .bt-audit:hover {
   transform: scale(1.1);
 }
-/* /login */
 
-/* rodapé */
-footer {
-  display: block;
-  position: absolute;
-  bottom: 0;
-  width: 100vw;
-  font-size: 1.8rem;
-  text-align: end;
-  color: white;
-  /* background-color: black; */
-  padding: 1rem;
-}
-/* /rodapé */
+.logout.open:hover {
+  background: rgba(0, 149, 179, .3);
+  border-radius: 20px;
+  padding: 0 1rem;
+  
+} 
 
 /* botões laterais */
 .bt-project,
@@ -143,22 +148,57 @@ footer {
   box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.5);
 }
 
-body {
-  background: linear-gradient(-45deg, var(--primary), #000000, #003244, var(--hover));
-  background-size: 400% 400%;
-  animation: gradient 15s ease infinite;
-  height: 100vh;
+ /*botões laterais*/
+.side {
+  display: grid;
 }
+
+/* video noticias */
+.video {
+  height: 70vh;
+  border-radius: 10px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.5);
+}
+
+/* links sub menu */
+Li {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  padding: 1rem 1.5rem;
+  transition: 0.5s;
+}
+
+li:hover {
+  background: var(--hover);
+  transform: scale(1.1);
+}
+
+/* rodapé */
+footer {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+  font-size: 1.8rem;
+  text-align: end;
+  color: white;
+  /* background-color: black; */
+  padding: 1rem;
+}
+
+/* animações */
 @keyframes gradient {
   0% {
-      background-position: 0% 50%;
+    background-position: 0% 50%;
   }
 
   50% {
-      background-position: 100% 50%;
+    background-position: 100% 50%;
   }
 
   100% {
-      background-position: 0% 50%;
+    background-position: 0% 50%;
   }
 }
